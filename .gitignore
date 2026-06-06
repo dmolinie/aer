@@ -1,0 +1,8 @@
+# Python
+__pycache__
+*.pyc
+*.out
+*.tar.xz
+*.egg-info
+dist*/
+
