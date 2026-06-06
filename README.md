@@ -12,7 +12,7 @@
 3. [Installation](#Installation)
 4. [Modules Description](#Modules-Description)
 5. [Example of Usage](#Example-of-Usage)
-6. [Troubleshooting](#Troubleshooting)
+<!--6. [Troubleshooting](#Troubleshooting)-->
 
 
 ## Description
@@ -280,7 +280,7 @@ fig.show()
 
 <!--**Fix**-->
 
-<!--In `aer/models_tk/_models_tk.py`, locate the line (problably line 649) and add `.cpu()` before each `.numpy()` call:-->
+<!--In `aer/models_tk/_models_tk.py`, locate the line and add `.cpu()` before each `.numpy()` call:-->
 
 <!--```python-->
 <!--# Before (broken on CUDA)-->
