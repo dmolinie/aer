@@ -375,7 +375,7 @@ class FilterBank():
     def filter_signal_norm(self, data):
         """ Filter the signal and normalize it; see `filter_signal` method
             and `rescale` function from the `data_tk` module for detail """
-        return scl.rescale(self.filter_signal(data), None)[-1]
+        return scl.rescale(self.filter_signal(data), None)[0]
     #------------------------------------------------------------------------#
 
     #-------------------------   Chunks Filtering   -------------------------#

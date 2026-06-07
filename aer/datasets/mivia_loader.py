@@ -226,7 +226,7 @@ def read_signal(folder, index, snr=30, **rescale):
 
     # If any rescaling parameters is provided, rescale the data
     if len(rescale) != 0:
-        signal = _scl.rescale(signal, **rescale)[-1]
+        signal = _scl.rescale(signal, **rescale)[0]
 
     # Return the sampling frequency & the signal data
     return frate, signal

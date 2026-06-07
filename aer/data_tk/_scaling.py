@@ -202,25 +202,22 @@ def rescale(data, limits=None, bounds=(0., 1.), axis=None, dtype=float):
 
     Returns
     -------
+    data_resc : np.ndarray
+        The rescaled data.
     limits : 2-tuple
         The min and max values within the data. If `limits` was provided
         as argument, return it directly; else, return the min and max of
         `data` along `axis`.
     bounds : 2-tuple
         The bounds of the interval within which the data are rescaled.
-    data : np.ndarray
-        The rescaled data.
 
     Examples
     --------
     >>> import numpy as np
 
     >>> data = np.random.random((10, 2))
-    >>> lims, bnds, data_norm = rescale(data, (0., 1.), (-1., 1.))
+    >>> data_norm, lims, bnds = rescale(data, (0., 1.), (-1., 1.))
     """
-
-    # TODO Return `data` first?
-    # TODO Reverse `limits` and `bounds` (`bounds` first)?
 
     # New bounds for the rescaled data
     bounds = np.array(bounds, float)
@@ -239,7 +236,7 @@ def rescale(data, limits=None, bounds=(0., 1.), axis=None, dtype=float):
     coef = (bounds[1] - bounds[0]) / (limits[1] - limits[0])
     data = coef*(data-limits[0]) + bounds[0]
 
-    return limits.astype(dtype), bounds.astype(dtype), data.astype(dtype)
+    return data.astype(dtype), limits.astype(dtype), bounds.astype(dtype)
 #----------------------------------------------------------------------------#
 
 ##############################################################################

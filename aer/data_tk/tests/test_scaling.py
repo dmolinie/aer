@@ -21,7 +21,7 @@ def test_extrema_nd():
 def test_rescale():
     """ Data rescaling between `bounds` """
     data = np.random.random((10, 2))
-    lims, bnds, data_norm = rescale(data, (0., 1.), (-1., 1.))
+    data_norm, lims, bnds = rescale(data, (0., 1.), (-1., 1.))
 
 def test_hzscale():
     """ Build a set of `samples` linearly spaced samples in the Hertz
