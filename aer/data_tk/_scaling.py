@@ -1,4 +1,4 @@
-""" Simple frequency-domain filters
+""" Simple frequency-domain filters 
 
 Authors: Dylan MOLINIE
 Company: CEA Paris-Saclay, Gif-sur-Yvette, France

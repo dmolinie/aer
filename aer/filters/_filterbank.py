@@ -1,4 +1,4 @@
-""" Filterbank class
+""" Filterbank class 
 
 Authors: Dylan MOLINIE
 Company: CEA Paris-Saclay, Gif-sur-Yvette, France
