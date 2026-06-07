@@ -98,7 +98,7 @@ class SincNet(_BaseNet):
         The number of output classes.
     config : dict
         The configuration parameters of the model
-    + Those inherited from torch.nn.Module.
+    + Those inherited from `torch.nn.Module`.
 
     Constructor
     -----------
@@ -112,7 +112,7 @@ class SincNet(_BaseNet):
     -------
     forward(x)
         Forward the input `x` to the model and retrieve its response.
-    + Those inherited from torch.nn.Module.
+    + Those inherited from `torch.nn.Module`.
 
     Examples
     --------

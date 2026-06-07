@@ -87,7 +87,7 @@ class Reshape(torch.nn.Module):
     ----------
     new_shape : array_like of ints
         The tensor's new shape.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Constructor
     -----------
@@ -97,7 +97,7 @@ class Reshape(torch.nn.Module):
     -------
     forward(x)
         Reshape the tensor.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Examples
     --------
@@ -156,7 +156,7 @@ class SwapDims(torch.nn.Module):
         The first dimension to swap.
     dim1 : int
         The second dimension to swap.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Constructor
     -----------
@@ -166,7 +166,7 @@ class SwapDims(torch.nn.Module):
     -------
     forward(x)
         Apply on-the-flow dimension swapping on the tensor.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Examples
     --------
@@ -222,7 +222,7 @@ class Squeeze(torch.nn.Module):
     ----------
     dim : int
         The dimension to squeeze.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Constructor
     -----------
@@ -232,7 +232,7 @@ class Squeeze(torch.nn.Module):
     -------
     forward(x)
         Squeeze the tensor.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Examples
     --------
@@ -286,7 +286,7 @@ class Unsqueeze(torch.nn.Module):
     ----------
     dim : int
         The dimension to unsqueeze.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Constructor
     -----------
@@ -296,7 +296,7 @@ class Unsqueeze(torch.nn.Module):
     -------
     forward(x)
         Unsqueeze the tensor.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Examples
     --------
@@ -355,7 +355,7 @@ class PrintShape(torch.nn.Module):
 
     Attributes
     ----------
-    None (except those inherited from Torch.nn.Module)
+    None (except those inherited from `Torch.nn.Module`)
 
     Constructor
     -----------
@@ -365,7 +365,7 @@ class PrintShape(torch.nn.Module):
     -------
     forward(x)
         Print the shape of the tensor, and return it.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Examples
     --------
@@ -427,7 +427,7 @@ class ExtractTensor(torch.nn.Module):
     -------
     forward(x)
         Extract the sub-tensor.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Examples
     --------
@@ -511,7 +511,7 @@ class LayerNorm(torch.nn.Module):
         Trainable channel scaling weights.
     beta : torch (trainable) Parameters
         Trainable channel normalization biases.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Constructor
     -----------
@@ -521,7 +521,7 @@ class LayerNorm(torch.nn.Module):
     -------
     forward(x)
         Apply normalization to the input data.
-    + Those inherited from Torch.nn.Module.
+    + Those inherited from `Torch.nn.Module`.
 
     Examples
     --------
